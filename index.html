@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONL 查看器</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="initial-tip">请拖拽JSONL文件到页面任意位置</div>
+        <div class="controls">
+            <button id="prev-btn" disabled>上一条</button>
+            <span id="line-indicator">未加载文件</span>
+            <button id="next-btn" disabled>下一条</button>
+        </div>
+
+        <div id="main-content">
+            <div id="json-tree"></div>
+            <div id="markdown-preview-container">
+                <button id="to-code-block-btn">转为代码块</button>
+                <div id="markdown-preview"></div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
